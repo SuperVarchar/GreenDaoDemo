@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <ListView
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:background="@drawable/wjg_popup"
+        android:layout_gravity="right"
+        android:dividerHeight="1px"
+        android:divider="@color/white"
+        android:id="@+id/meun_item_lv"
+        android:paddingBottom="@dimen/base10dp"
+        android:paddingTop="@dimen/base10dp"
+        android:layout_marginRight="@dimen/base12dp"
+        android:layout_width="@dimen/base150dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

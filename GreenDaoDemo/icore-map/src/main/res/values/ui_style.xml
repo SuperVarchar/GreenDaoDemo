@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ListView的样式 -->
+    <style name="NormalListViewStyle">
+        <item name="android:layout_margin">@dimen/base8dp</item>
+        <item name="android:divider">@color/list_div</item>
+        <item name="android:dividerHeight">@dimen/base8dp</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!-- 编辑EditText的样式 -->
+    <style name="NormalEditTextStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingRight">@dimen/base8dp</item>
+        <item name="android:textColor">#88000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 显示详情的TextView标题的样式 -->
+    <style name="NormalMessageNameStyle">
+
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/message_name</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">@dimen/base78dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 显示详情的TextView内容的样式 -->
+    <style name="NormalContent1Style">
+        <item name="android:background">@null</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:textColor">@color/message_content</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="android:width">0dp</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:layout_marginLeft">@dimen/base4dp</item>
+    </style>
+
+    <!--编辑信息的EditText的样式  -->
+    <style name="NormalEditText2Style">
+        <item name="android:background">#00000000</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:textColor">@color/message_content</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <!--底部长按钮的样式抽取 -->
+    <style name="NormalBigBottomButtonStyle">
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:layout_height">@dimen/base44dp</item>
+        <item name="android:layout_width">@dimen/base320dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/base18dp</item>
+        <item name="android:layout_marginTop">@dimen/base30dp</item>
+        <item name="android:layout_marginBottom">@dimen/base30dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:text">提交</item>
+    </style>
+
+    <!-- HeadLineLight  2 -->
+    <style name="NormalHeadLineLightStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!-- TitleLight   -->
+    <style name="NormalTitleLightStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+    <!-- SubHeadingLight 3B -->
+    <style name="NormalSubHeadingLightStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <!-- Body2Light2 -->
+    <style name="NormalBody2LightStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- Body1Light1 -->
+    <style name="NormalBody1LightStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- CaptionLight1 -->
+    <style name="NormalCaptionLightStyle">
+        <item name="android:alpha">0.54</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- MenuLight1 -->
+    <style name="NormalMenuLightStyle">
+        <item name="android:alpha">0.54</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- ButtomLight1 -->
+    <style name="NormalButtomLightStyle">
+        <item name="android:alpha">0.54</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- HeadLineDark  2 -->
+    <style name="NormalHeadLineDarkStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!-- TitleDark   -->
+    <style name="NormalTitleDarkStyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+    <!-- SubHeadingDark 3B -->
+    <style name="NormalSubHeadingDarkStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <!-- Body2Dark2 -->
+    <style name="NormalBody2DarkStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- Body1Dark1 -->
+    <style name="NormalBody1DarkStyle">
+        <item name="android:alpha">0.87</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- CaptionDark1 -->
+    <style name="NormalCaptionDarkStyle">
+        <item name="android:alpha">0.54</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- MenuDark1 -->
+    <style name="NormalMenuDarkStyle">
+        <item name="android:alpha">0.54</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- ButtomDark1 -->
+    <style name="NormalButtomDarkStyle">
+        <item name="android:alpha">0.54</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--多行编辑-->
+    <style name="EidtTextMultText">
+        <item name="android:minHeight">@dimen/base30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>    //进场动画
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>    //出场动画
+    </style>
+
+    <color name="color_1f277e">#1f277e</color>
+    <color name="color_B7B7B7">#b7b7b7</color>
+    <color name="color_e7e7e7">#e7e7e7</color>
+    <color name="color_FF8547">#ff8547</color>
+    <color name="color_fa3f25">#fa3f25</color>
+
+
+    <!--文字标题-->
+    <!--添加页面 文字标题-->
+    <style name="tz_15_808080">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_808080</item>
+    </style>
+    <style name="tz_15_666666">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+    <style name="tz_15_white">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tz_15_ff474e">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+    <!--添加页面 填入的值-->
+    <style name="tz_15_333333">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+    <!--添加页面 填入的值-->
+    <style name="tz_16_333333">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+    <!--添加页面 填入的值-->
+    <style name="tz_16_999999">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+    <style name="tz_14_333333">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+    <style name="tz_14_999999">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+    <style name="tz_14_666666">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+    <style name="tz_14_808080">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_808080</item>
+    </style>
+    <style name="tz_14_8a8a8a">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_8a8a8a</item>
+    </style>
+    <style name="tz_15_999999">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+    <style name="tz_12_666666">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+    <style name="tz_12_333333">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+    <style name="tz_12_808080">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_808080</item>
+    </style>
+    <style name="tz_12_999999">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+    <style name="tz_6_white">
+        <item name="android:textSize">6sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tz_13_white">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tz_13_999999">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+    <style name="tz_17_333333">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <!--****** 待定-->
+    <style name="tz_17_f47300">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/color_f47300</item>
+    </style>
+
+    <!--****** 待定-->
+    <style name="tz_28_999999">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+    <style name="tz_13_808080">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_808080</item>
+    </style>
+    <style name="tz_13_333333">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+    <style name="tz_13_666666">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+    <style name="tz_13_ff474e">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+
+    <style name="tz_14_ff474e">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+
+    <style name="tz_13_FF474E">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+
+
+    <!--******-->
+    <style name="tz_15_dialog_multiple_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/dialog_multiple_text</item>
+    </style>
+    <!--******-->
+    <style name="tz_15_meeting_radio_select">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/meeting_radio_select</item>
+    </style>
+    <style name="tz_15_file_box_radio_select">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/file_box_radio_select</item>
+    </style>
+    <style name="tz_12_file_box_radio_select">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/file_box_radio_select</item>
+    </style>
+    <style name="tz_15_item_checked_text_color">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/item_checked_text_color</item>
+    </style>
+    <!--<style name="tz_15_task_bt_color">-->
+        <!--<item name="android:textSize">15sp</item>-->
+        <!--<item name="android:textColor">@color/check_bt_color</item>-->
+    <!--</style>-->
+    <style name="tz_13_filter_text_select">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/filter_text_select</item>
+    </style>
+    <!--****** 待定-->
+    <style name="tz_18_fa3f25">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_fa3f25</item>
+    </style>
+
+    <style name="tz_16_ff474e">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+    <style name="tz_16_808080">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_808080</item>
+    </style>
+
+    <!--****** 待定-->
+    <style name="tz_15_d9414b">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_d9414b</item>
+    </style>
+
+    <style name="tz_15_FF474E">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+
+    <style name="tz_15_FF8547">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_FF8547</item>
+    </style>
+    <style name="tz_14_FF8547">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_FF8547</item>
+    </style>
+
+
+
+    <!--****** -->
+    <style name="tz_15_tab_text_select">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/tab_text_select</item>
+    </style>
+    <style name="tz_14_bfd9fe">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_bfd9fe</item>
+    </style>
+    <style name="tz_14_e7e7e7">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_e7e7e7</item>
+    </style>
+    <style name="tz_14_b7b7b7">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_B7B7B7</item>
+    </style>
+
+
+    <style name="tz_14_00c085">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_00c085</item>
+    </style>
+
+    <style name="tz_15_fa9c12">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_fa9c12</item>
+    </style>
+
+    <style name="tz_18_01adff">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_01adff</item>
+    </style>
+
+    <style name="tz_10_white">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="tz_10_999999">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="tz_18_white">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tz_16_white">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tz_18_999999">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+    <style name="tz_18_666666">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+    <style name="tz_18_333333">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="tz_18_ff474e">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+
+    <style name="tz_20_282828">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/color_282828</item>
+    </style>
+
+    <style name="tz_18_FF474E">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+
+    <style name="tz_18_ffffff">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+    <style name="tz_20_white">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tz_22_white">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tz_12_ff6530">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_ff6530</item>
+    </style>
+
+
+    <style name="tz_12_ff474e">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_ff474e</item>
+    </style>
+    <style name="tz_12_white">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="tz_9_tab">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/tab_text_select</item>
+    </style>
+    <style name="tz_15_tab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/tab_text_select</item>
+    </style>
+    <style name="tz_9_999999">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="tz_form_btn" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+    <!--<style name="tz_12_ff6530">-->
+        <!--<item name="android:textSize">12sp</item>-->
+        <!--<item name="android:textColor">@color/color_ff6530</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash;******&ndash;&gt;-->
+    <!--<style name="task_bt_color" >-->
+        <!--<item name="android:textSize">13sp</item>-->
+        <!--<item name="android:textColor">@color/check_bt_color</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash;******&ndash;&gt;-->
+    <!--<style name="check_btn" >-->
+        <!--<item name="android:textSize">12sp</item>-->
+        <!--<item name="android:textColor">@color/check_bt_color</item>-->
+    <!--</style>-->
+    <!--<style name="check_btn_15" >-->
+        <!--<item name="android:textSize">15sp</item>-->
+        <!--<item name="android:textColor">@color/check_bt_color</item>-->
+    <!--</style>-->
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="success"/>
+    <item type="id" name="expandable_toggle_button" />
+    <item type="id" name="expandable" />
+    <item type="id" name="drop_down_menu" />
+    <item type="id" name="swipe_tag"></item>
+    <item type="id" name="hierarchy"></item>
+    <item type="id" name="isexpand"></item>
+
+</resources>

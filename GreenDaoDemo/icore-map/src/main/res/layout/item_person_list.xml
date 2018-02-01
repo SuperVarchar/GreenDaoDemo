@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/catalog_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_line"/>
+
+        <TextView
+            android:id="@+id/catalog"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/base20dp"
+            android:paddingLeft="@dimen/base15dp"
+            android:background="@color/color_f5f4f9"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_8a8a8a"
+            />
+
+        <include layout="@layout/include_line"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp"
+        android:background="@drawable/bg_list_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/cb_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:layout_marginRight="@dimen/base15dp"
+            android:background="@null"
+            android:button="@drawable/person_selecter"
+            android:clickable="false"
+            android:focusable="false"
+            />
+
+        <com.hnshituo.icore_map.view.view.CircleImageView
+            android:id="@+id/friend_icon"
+            android:layout_width="@dimen/base35dp"
+            android:layout_height="@dimen/base35dp"
+            android:src="@drawable/head_portrait"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black_deep"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base3dp"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/department"
+            android:textSize="10sp"
+            android:textColor="@color/color_999999"
+            android:layout_marginLeft="@dimen/base5dp"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/base20dp"
+            android:layout_width="@dimen/base70dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/base15dp"
+        android:background="@color/color_cccccc"
+        android:visibility="visible"/>
+
+</LinearLayout>

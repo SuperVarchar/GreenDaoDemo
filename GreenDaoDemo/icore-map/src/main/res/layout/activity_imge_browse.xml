@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@color/white">
+    <TextView
+        android:text="没有可浏览的图片"
+        android:textSize="@dimen/base28dp"
+        android:textColor="@color/color_999999"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.hnshituo.icore_map.view.view.MyViewPage
+        android:background="@color/black_deep"
+        android:id="@+id/image_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

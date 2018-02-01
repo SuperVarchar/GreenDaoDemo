@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/base320dp"
+        android:layout_height="@dimen/base438dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/umeng_update_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/base15dp"
+            android:layout_marginTop="@dimen/base15dp"
+            android:textColor="@color/color_333333"
+            android:textSize="17sp"/>
+
+        <include layout="@layout/include_line"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ListView
+                android:id="@+id/dialog_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                >
+            </ListView>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/empty"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+        <include layout="@layout/include_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.hnshituo.icore_map.view.view.AnimationButton
+                android:id="@+id/dialog_cancel"
+                android:textColor="#999999"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/base50dp"
+                android:layout_weight="1"
+                android:background="@drawable/umeng_bottom_cancle_dialog_bg"
+                android:text="取消"/>
+
+            <com.hnshituo.icore_map.view.view.AnimationButton
+                android:id="@+id/dialog_confirm"
+                android:textColor="#4542ed"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/base50dp"
+                android:layout_weight="1"
+                android:background="@drawable/umeng_bottom_dialog_bg"
+                android:text="确定"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

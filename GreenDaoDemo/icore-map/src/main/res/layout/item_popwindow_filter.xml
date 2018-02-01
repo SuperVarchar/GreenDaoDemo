@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_filter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base20dp"
+            android:textColor="#333333"
+            android:textSize="18sp"/>
+
+        <com.hnshituo.icore_map.view.forScrollview.GridViewForScrollView
+            android:id="@+id/item_filter_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base21dp"
+            android:layout_marginTop="@dimen/base22dp"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="@dimen/base18dp"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/base21dp">
+        </com.hnshituo.icore_map.view.forScrollview.GridViewForScrollView>
+</LinearLayout>

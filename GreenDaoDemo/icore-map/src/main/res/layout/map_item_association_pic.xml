@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_marginBottom="@dimen/base5dp"
+        android:layout_marginTop="@dimen/base5dp"
+        android:id="@+id/association_pic"
+        android:layout_width="@dimen/base50dp"
+        android:layout_height="@dimen/base50dp"/>
+
+</LinearLayout>

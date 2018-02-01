@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 调休-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f4f9"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <include layout="@layout/include_line"/>
+
+    <ScrollView
+        android:layout_marginTop="@dimen/base5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f5f4f9"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_line_bg_shape"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/base15dp"
+                android:paddingRight="@dimen/base15dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.hnshituo.icore_map.view.view.AutoAlignTextView
+                        style="@style/ApproveInfoTextTitle"
+                        android:gravity="right"
+                        android:text="调休人"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bt_xing"/>
+
+                    <TextView
+                        android:id="@+id/person_name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/base8dp"
+                        android:drawableRight="@drawable/arrow_xiangyou"
+                        android:hint="请选择"
+                        android:paddingLeft="@dimen/base5dp"
+                        android:textColor="@color/color_333333"
+                        android:textColorHint="@color/color_999999"
+                        android:textSize="@dimen/base15dp"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/include_line"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/base50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.hnshituo.icore_map.view.view.AutoAlignTextView
+                        style="@style/ApproveInfoTextTitle"
+                        android:gravity="right"
+                        android:text="所属部门"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bt_xing"/>
+
+                    <TextView
+                        android:id="@+id/department_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/base8dp"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/base15dp"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/include_line"/>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/base120dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/base10dp"
+                    android:paddingTop="@dimen/base10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.hnshituo.icore_map.view.view.AutoAlignTextView
+                            style="@style/ApproveInfoTextTitle"
+                            android:gravity="right"
+                            android:text="调休理由"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bt_xing"/>
+
+                        <TextView
+                            android:id="@+id/dayoff_reason_length"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="0/200"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/base12dp"/>
+                    </LinearLayout>
+
+                    <com.hnshituo.icore_map.view.edittext.ContainsEmojiEditText
+                        android:id="@+id/dayoff_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/base15dp"
+                        android:background="@color/white"
+                        android:gravity="left|top"
+                        android:hint="请填写调休事由"
+                        android:maxLength="200"
+                        android:textColor="@color/color_333333"
+                        android:textColorHint="@color/color_999999"
+                        android:textSize="@dimen/base15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/include_line"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@color/color_cccccc"/>
+
+            <com.hnshituo.icore_map.view.view.AnimationLinearLayout
+                android:id="@+id/choose_approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/base15dp"
+                android:paddingLeft="@dimen/base15dp">
+
+                <com.hnshituo.icore_map.view.view.AutoAlignTextView
+                    android:layout_width="@dimen/base60dp"
+                    android:layout_height="wrap_content"
+                    android:text="审批人"
+                    android:textColor="@color/color_808080"
+                    android:textSize="@dimen/base15dp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base5dp"
+                    android:src="@drawable/bt_xing"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@drawable/arrow_xiangyou"
+                    android:src="@drawable/arrow_xiangyou"/>
+            </com.hnshituo.icore_map.view.view.AnimationLinearLayout>
+
+            <com.hnshituo.icore_map.view.forScrollview.GridViewForScrollView
+                android:id="@+id/ask_approve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:numColumns="5"
+                android:paddingBottom="@dimen/base10dp"
+                android:paddingLeft="@dimen/base15dp"
+                android:paddingRight="@dimen/base15dp"
+                android:paddingTop="@dimen/base10dp"/>
+
+            <include layout="@layout/include_line"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@color/color_cccccc"/>
+
+            <RelativeLayout
+                android:id="@+id/choose_notify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base15dp"
+                android:paddingLeft="@dimen/base15dp"
+                android:paddingTop="@dimen/base15dp">
+
+                <com.hnshituo.icore_map.view.view.AutoAlignTextView
+                    style="@style/ApproveInfoTextTitle"
+                    android:layout_width="@dimen/base60dp"
+                    android:gravity="right"
+                    android:text="抄送人"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/base15dp"
+                    android:src="@drawable/arrow_xiangyou"/>
+
+            </RelativeLayout>
+
+            <com.hnshituo.icore_map.view.forScrollview.GridViewForScrollView
+                android:id="@+id/day_off_notify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:numColumns="5"
+                android:padding="@dimen/base15dp"/>
+
+
+            <com.hnshituo.icore_map.view.view.AnimationButton
+                android:id="@+id/see_more"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base60dp"
+                android:background="@color/white"
+                android:text="查看更多"
+                android:textColor="@color/color_4987f4"
+                android:textSize="@dimen/base15dp"
+                android:visibility="gone"
+                />
+
+            <include layout="@layout/include_line"/>
+
+            <com.hnshituo.icore_map.view.view.AnimationButton
+                android:id="@+id/submit"
+                style="@style/NormalBigBottomButtonStyle"
+                android:text="下一步"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

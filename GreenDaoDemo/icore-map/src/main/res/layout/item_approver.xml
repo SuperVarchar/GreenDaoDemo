@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 审批人的item -->
+
+    <LinearLayout
+        android:paddingRight="@dimen/base10dp"
+        android:paddingBottom="@dimen/base10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/base38dp"
+                    android:layout_height="@dimen/base38dp">
+
+                    <com.hnshituo.icore_map.view.view.CircleImageView
+                        android:id="@+id/approver_avatar_iv"
+                        android:layout_width="@dimen/base38dp"
+                        android:layout_height="@dimen/base38dp"
+                        android:src="@drawable/wjg_user"/>
+
+                    <com.hnshituo.icore_map.view.view.AnimationButton
+                        android:id="@+id/delete"
+                        android:layout_width="@dimen/base12dp"
+                        android:layout_height="@dimen/base12dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/delete_approve"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/approver_back_iv"
+                    android:layout_width="@dimen/base15dp"
+                    android:layout_height="@dimen/base15dp"
+                    android:layout_marginLeft="@dimen/base5dp"
+                    android:src="@drawable/next_approve"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/approver_name_tv"
+                android:layout_width="@dimen/base40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base10dp"
+                android:maxLength="3"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/base12dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

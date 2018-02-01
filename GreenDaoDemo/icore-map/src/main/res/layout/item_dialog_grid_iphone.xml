@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+            android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_dialog_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/service"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/base10dp"
+            android:id="@+id/item_dialog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="回复全部"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/base14dp"
+            android:typeface="serif"/>
+    </LinearLayout>
+</LinearLayout>

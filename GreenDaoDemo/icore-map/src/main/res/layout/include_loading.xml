@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/include_loadding"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+    <ImageView
+        android:src="@drawable/net_loading"
+        android:id="@+id/loading_image"
+        android:layout_width="@dimen/base150dp"
+        android:layout_height="@dimen/base100dp"/>
+
+</RelativeLayout>

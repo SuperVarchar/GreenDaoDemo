@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/progress_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/radius_stroke_black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/base16dp">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="@dimen/base14dp"
+            android:layout_height="@dimen/base14dp"
+            android:layout_marginRight="@dimen/base8dp"
+            android:indeterminateDrawable="@drawable/umeng_xp_loading"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/progress"
+            android:textColor="@color/color_8a8a8a"
+            android:textSize="@dimen/base14dp"/>
+    </LinearLayout>
+
+    <com.hnshituo.icore_map.view.photoview.EasePhotoView
+        android:id="@+id/image_browse_pv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/base50dp"
+        android:background="#30000000"
+        android:gravity="right|center">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/tab_back"
+            android:paddingRight="@dimen/base15dp"
+            android:paddingLeft="@dimen/base15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/image_browse_page_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/base10dp"
+            android:text="1/10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base18dp"/>
+
+        <ImageView
+            android:id="@+id/image_browse_del_iv"
+            android:layout_width="@dimen/base40dp"
+            android:layout_height="@dimen/base40dp"
+            android:padding="@dimen/base10dp"
+            android:src="@drawable/delt02"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_marginLeft="@dimen/base10dp"
+        android:layout_marginTop="@dimen/base10dp"
+        android:src="@drawable/qd_location2"
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@drawable/qd_location2"/>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/base10dp"
+        android:layout_marginTop="@dimen/base10dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/color_282828"
+            android:textSize="@dimen/base15dp"/>
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base5dp"
+            android:layout_marginTop="@dimen/base8dp"
+            android:singleLine="true"
+            android:textColor="@color/color_7b7b7b"
+            android:textSize="@dimen/base14dp"/>
+    </LinearLayout>
+
+</LinearLayout>

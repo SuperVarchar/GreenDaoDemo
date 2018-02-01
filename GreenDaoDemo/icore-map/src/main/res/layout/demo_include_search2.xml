@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/color_f4f5f9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+                android:id="@+id/search2_ll"
+    >
+
+    <RelativeLayout
+        android:id="@+id/search_ll"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base34dp"
+        android:layout_margin="@dimen/base10dp">
+
+        <TextView
+            android:textSize="@dimen/base14dp"
+            android:textColor="@color/color_666666"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search1_shape"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/base5dp"
+            />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@drawable/search_iv"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

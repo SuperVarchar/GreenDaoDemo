@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/base5dp"
+        android:layout_marginRight="@dimen/base5dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.hnshituo.icore_map.view.view.CircleImageView
+            android:src="@drawable/head_portrait"
+            android:id="@+id/person_avatar"
+            android:layout_margin="@dimen/base5dp"
+            android:layout_width="@dimen/base35dp"
+            android:layout_height="@dimen/base35dp"/>
+        <TextView
+            android:id="@+id/person_name"
+            android:textSize="@dimen/base10dp"
+            android:textColor="@color/black_deep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

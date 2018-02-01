@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:gravity="bottom"
+              android:orientation="vertical">
+
+    <com.hnshituo.icore_map.view.forScrollview.GridViewForScrollView
+        android:id="@+id/iphone_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/base15dp"
+        android:background="@drawable/radius_stroke_write"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1px"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        />
+
+    <com.hnshituo.icore_map.view.view.AnimationButton
+        android:id="@+id/iphone_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base45dp"
+        android:layout_marginBottom="@dimen/base15dp"
+        android:layout_marginLeft="@dimen/base15dp"
+        android:layout_marginRight="@dimen/base15dp"
+        android:background="@drawable/radius_stroke_write"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/color_4987f4"
+        android:textSize="18sp"
+        android:typeface="serif"/>
+</LinearLayout>

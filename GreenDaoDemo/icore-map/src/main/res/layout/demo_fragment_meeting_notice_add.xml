@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f5f4f9"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base5dp"
+        android:background="@color/color_f5f4f9"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+
+            <com.hnshituo.icore_map.view.view.AnimationLinearLayout
+                android:id="@+id/room_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@drawable/layout_line_bg_shape"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/base15dp"
+                android:paddingLeft="@dimen/base15dp"
+                android:paddingRight="@dimen/base15dp"
+                android:paddingTop="@dimen/base15dp">
+
+                <TextView
+                    style="@style/tz_15_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会  议  室"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base5dp"
+                    android:src="@drawable/bt_xing"
+                    />
+
+                <TextView
+                    android:id="@+id/room"
+                    style="@style/tz_15_333333"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base15dp"
+                    android:layout_weight="1"
+                    android:hint="请先选择会议室"
+                    android:textColorHint="@color/color_999999"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_xiangyou"/>
+
+            </com.hnshituo.icore_map.view.view.AnimationLinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@drawable/layout_line_bg_shape"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/base15dp"
+                android:paddingRight="@dimen/base15dp"
+                android:visibility="visible"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/base50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        style="@style/tz_15_999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/base5dp"
+                        android:drawableRight="@drawable/bt_xing"
+                        android:text="会议主题"/>
+
+                    <com.hnshituo.icore_map.view.edittext.ContainsEmojiEditText
+                        android:id="@+id/title"
+                        style="@style/tz_15_333333"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base25dp"
+                        android:background="@color/white"
+                        android:hint="请输入(限200字)"
+                        android:maxLength="200"
+                        android:textColorHint="@color/color_999999"/>
+                </LinearLayout>
+
+                <include layout="@layout/include_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/base50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tz_15_999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/base5dp"
+                        android:drawableRight="@drawable/bt_xing"
+                        android:text="会议地点"/>
+
+                    <com.hnshituo.icore_map.view.edittext.ContainsEmojiEditText
+                        android:id="@+id/meeting_address"
+                        style="@style/tz_15_333333"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base25dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="请输入(限200字)"
+                        android:maxLength="200"
+                        android:maxLines="200"
+                        android:textColorHint="@color/color_999999"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/include_line"/>
+
+                <LinearLayout
+                    android:id="@+id/compere_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/base50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tz_15_999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/base5dp"
+                        android:text="会议主持"/>
+
+                    <TextView
+                        android:id="@+id/compere"
+                        style="@style/tz_15_333333"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base38dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_xiangyou"/>
+                </LinearLayout>
+
+                <include layout="@layout/include_line"/>
+
+                <LinearLayout
+                    android:id="@+id/end_time_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/base50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tz_15_999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/base5dp"
+                        android:drawableRight="@drawable/bt_xing"
+                        android:text="召开时间"/>
+
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/tz_15_333333"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base25dp"
+                        android:layout_weight="1"
+                        android:maxLength="50"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_xiangyou"/>
+                </LinearLayout>
+
+
+                <include layout="@layout/include_line"/>
+
+                <LinearLayout
+                    android:id="@+id/choose_convoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/base50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tz_15_999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="召开部门"/>
+
+                    <TextView
+                        android:id="@+id/meeting_department"
+                        style="@style/tz_15_333333"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base38dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawablePadding="@dimen/base5dp"
+                        android:drawableRight="@drawable/arrow_xiangyou"
+                        android:maxLength="50"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/department_ll"
+                style="@style/customerInfoEditLL"
+                android:layout_marginBottom="@dimen/base5dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@drawable/layout_line_bg_shape"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/tz_15_808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通知范围"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base5dp"
+                    android:src="@drawable/bt_xing"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:id="@+id/deparment_tv"
+                    style="@style/customerInfoEditET"
+                    android:layout_marginLeft="@dimen/base15dp"
+                    android:layout_marginRight="@dimen/base15dp"
+                    android:ellipsize="end"
+                    android:hint="请选择"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_999999"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_xiangyou"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/role_ll"
+                style="@style/customerInfoEditLL"
+                android:layout_marginBottom="@dimen/base5dp"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@drawable/layout_line_bg_shape"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/tz_15_808080"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通知角色"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base5dp"
+                    android:src="@drawable/bt_xing"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:id="@+id/role_tv"
+                    style="@style/customerInfoEditET"
+                    android:layout_marginLeft="@dimen/base15dp"
+                    android:layout_marginRight="@dimen/base15dp"
+                    android:ellipsize="end"
+                    android:hint="请选择"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_999999"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_xiangyou"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choose_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@drawable/layout_line_bg_shape"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/base15dp"
+                android:paddingLeft="@dimen/base15dp"
+                android:paddingRight="@dimen/base15dp"
+                android:paddingTop="@dimen/base10dp"
+                android:visibility="visible"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tz_15_808080"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="参会人员"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base5dp"
+                        android:src="@drawable/bt_xing"
+                        />
+                </LinearLayout>
+
+                <com.hnshituo.icore_map.view.forScrollview.GridViewForScrollView
+                    android:id="@+id/visit_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="5"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/agendas_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@drawable/layout_line_bg_shape"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/base15dp"
+                android:paddingRight="@dimen/base15dp"
+                android:paddingTop="@dimen/base10dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/tz_15_999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/base5dp"
+                        android:text="会议议程"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/agendas_length"
+                        style="@style/tz_12_999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/1000"
+                        />
+
+                </LinearLayout>
+
+                <com.hnshituo.icore_map.view.edittext.ContainsEmojiEditText
+                    android:id="@+id/agendas"
+                    style="@style/tz_15_333333"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="请填写会议议程"
+                    android:maxLength="1000"
+                    android:minHeight="@dimen/base70dp"
+                    android:paddingTop="@dimen/base10dp"
+                    android:textColorHint="@color/color_999999"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/annex_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base5dp"
+                android:background="@drawable/layout_line_bg_shape"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/base15dp"
+                android:paddingRight="@dimen/base15dp"
+                android:paddingTop="@dimen/base10dp"
+                android:visibility="visible"
+                >
+
+                <LinearLayout
+                    android:id="@+id/add_file_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/base40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tz_15_999999"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="会议附件"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrow_xiangyou"/>
+
+                </LinearLayout>
+
+                <com.hnshituo.icore_map.view.forScrollview.ListViewForScrollView
+                    android:id="@+id/file_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"/>
+
+            </LinearLayout>
+
+
+            <com.hnshituo.icore_map.view.view.AnimationButton
+                android:id="@+id/submit"
+                style="@style/NormalBigBottomButtonStyle"
+                android:text="发布"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/umeng_update_dialog_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/base320dp"
+        android:layout_height="@dimen/base438dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:textSize="17sp"
+            android:textColor="@color/color_333333"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/base15dp"
+            android:layout_marginTop="@dimen/base15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/include_line"/>
+
+        <ListView
+            android:overScrollMode="never"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:id="@+id/dialog_lv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </ListView>
+
+        <include layout="@layout/include_line"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hnshituo.icore_map.view.view.AnimationButton
+                android:id="@+id/dialog_cancel"
+                android:textSize="18sp"
+                android:textColor="@color/color_999999"
+                android:text="取消"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/base50dp"
+                android:background="@drawable/umeng_bottom_cancle_dialog_bg"/>
+
+            <com.hnshituo.icore_map.view.view.AnimationButton
+                android:id="@+id/dialog_confirm"
+                android:text="确定"
+                android:textSize="18sp"
+                android:textColor="@color/color_4987f4"
+                android:background="@drawable/umeng_bottom_dialog_bg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/base50dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

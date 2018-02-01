@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/base250dp"
+        android:layout_height="@dimen/base110dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dialog_title_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/base15dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base13dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新版本更新"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base13dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/base250dp"
+        android:layout_height="@dimen/base189dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/dialog_white"/>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base30dp"
+            android:layout_marginTop="@dimen/base25dp"
+            android:text="新增功能："
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/base15dp"/>
+        <ScrollView
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginTop="@dimen/base12dp">
+
+            <TextView
+                android:id="@+id/update_content"
+                android:textColor="@color/color_999999"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base30dp"
+                android:layout_marginRight="@dimen/base30dp"
+                android:textSize="@dimen/base13dp"/>
+        </ScrollView>
+
+        <LinearLayout
+            android:paddingLeft="@dimen/base15dp"
+            android:paddingRight="@dimen/base15dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.hnshituo.icore_map.view.view.AnimationButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/dialog_bt"
+            android:background="@drawable/sure"
+            android:text="立即升级"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base15dp"
+            android:layout_marginBottom="@dimen/base20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+            <com.hnshituo.icore_map.view.view.AnimationButton
+                android:layout_marginLeft="@dimen/base20dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/dialog_bt_cancel"
+                android:background="@drawable/cancle"
+                android:text="稍后再说"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base15dp"
+                android:layout_marginBottom="@dimen/base20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

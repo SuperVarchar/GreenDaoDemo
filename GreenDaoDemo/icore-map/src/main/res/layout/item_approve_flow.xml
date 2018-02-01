@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- 进度的item -->
+    <LinearLayout
+        android:background="@color/color_f5f5f5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginRight="@dimen/base10dp"
+            android:layout_marginLeft="@dimen/base15dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/approve_flow_item_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/applyer"
+            android:contentDescription="@drawable/applyer"/>
+
+
+        <LinearLayout
+            android:background="@drawable/map_radius_stroke_gray_white"
+            android:paddingLeft="@dimen/base10dp"
+            android:paddingTop="@dimen/base15dp"
+            android:layout_marginTop="@dimen/base10dp"
+            android:layout_marginRight="@dimen/base15dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/base86dp">
+
+            <com.hnshituo.icore_map.view.view.CircleImageView
+                android:layout_marginRight="@dimen/base10dp"
+                android:id="@+id/person_logo"
+                android:src="@drawable/head_portrait"
+                android:layout_width="@dimen/base38dp"
+                android:layout_height="@dimen/base38dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/approve_flow_item_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/base15dp"/>
+
+                    <FrameLayout
+                        android:layout_marginRight="@dimen/base10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/approve_flow_item_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_999999"
+                                android:textSize="@dimen/base12dp"/>
+
+                            <TextView
+                                android:id="@+id/approve_flow_item_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/base10dp"
+                                android:textColor="@color/color_999999"
+                                android:textSize="@dimen/base12dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/approve_flow_item_urge"
+                            android:layout_width="@dimen/base60dp"
+                            android:layout_height="@dimen/base30dp"
+                            android:background="@drawable/pass_blue_shape"
+                            android:gravity="center"
+                            android:text="催一下"
+                            android:textColor="@color/white"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/base5dp"
+                    android:id="@+id/approve_flow_item_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发起申请"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/base12dp"/>
+
+                <TextView
+                    android:paddingBottom="@dimen/base10dp"
+                    android:paddingRight="@dimen/base15dp"
+                    android:layout_marginTop="@dimen/base10dp"
+                    android:id="@+id/approve_flow_content_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/base12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

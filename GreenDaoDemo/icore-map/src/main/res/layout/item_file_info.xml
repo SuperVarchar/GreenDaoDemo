@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base60dp"
+    android:background="@color/white"
+    android:id="@+id/swipe"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+
+    <TextView
+        android:id="@+id/item_fileinfo_delete"
+        android:layout_width="@dimen/base61dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/swipea_extra_red"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/color_ffffff"
+        android:textSize="@dimen/base16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:minHeight="?android:listPreferredItemHeight">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/base15dp"
+            android:id="@+id/fileinfo_row_image"
+            android:layout_width="@dimen/base48dp"
+            android:layout_height="@dimen/base48dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wjxz_unknown"
+            android:contentDescription="@drawable/wjxz_unknown"/>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/base10dp"
+            android:id="@+id/fileinfo_detail_content_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/fileinfo_bottom_text"
+            android:layout_toRightOf="@+id/fileinfo_row_image"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/base8dp"
+            android:paddingTop="@dimen/base8dp">
+
+            <TextView
+                android:id="@+id/fileinfo_top_view_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/base16dp"
+                />
+
+            <TextView
+                android:id="@+id/fileinfo_dataview_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:paddingTop="@dimen/base5dp"
+                android:singleLine="true"
+                android:textColor="@color/color_999999"
+                android:textAllCaps="false"
+                android:textSize="@dimen/base12dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="@dimen/base15dp"
+            android:id="@+id/fileinfo_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/base12dp"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/all_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cccccc"/>
+
+            <View
+                android:id="@+id/not_all_bottom_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/base15dp"
+                android:background="#cccccc"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>
